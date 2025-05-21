@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    
+}
+/* CALCULATOR STYLING */
+.calc-container {
+    gap:10px;
+    height:400px;
+    /* width:150px; */
+    border: solid 1.5px hsla(218, 9%, 47%, 0.518) ;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.screen{
+    text-align: right;
+}
+
+.prev-result{
+    height: 40px;
+    color: rgb(192, 191, 202);
+}
+
+.current-result{
+    height: 40px;
+}
+
+.calc-container button {
+    height:45px;
+    width:45px;
+    /* height: fit-content; */
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.number{
+    background-color: rgb(48, 56, 65);
+}
+.specialchar{
+    background-color: rgb(29, 33, 39);
+}
+.equalsto{
+    background-color: rgb(83, 96, 111);
+}
+.buttons {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+    padding-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+.number:hover{
+    font-weight: bolder;
+    background-color: rgb(54, 63, 74);
+}
+.specialchar:hover{
+    font-weight: bolder;
+    background-color: rgb(39, 44, 52);
+}
+.equalsto:hover{
+    font-weight: bolder;
+    background-color: rgb(98, 114, 131);
+}
